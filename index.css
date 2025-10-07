@@ -1,0 +1,146 @@
+body {
+    background-color: #DB7093;
+    font-family: calibri;
+}
+
+@font-face {
+    font-family: 'autumn';
+    src: url(fontes/Autumn\ Bright.otf);
+}
+
+@keyframes textEffect {
+    0% {
+        color: rgb(0, 0, 0);
+        text-shadow: none;
+    }
+    25% {
+        text-shadow: 2px 2px #D3AF37;
+    }
+    50% {
+        text-shadow: none;
+    }
+    100% {
+        text-shadow: 2px 2px #D3AF37;
+    }
+}
+
+h1 {
+    animation-name: textEffect;
+    animation-delay: 1s;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    font-family: 'autumn';
+    font-size: 45px;
+    text-align: center;
+    margin-top: 6%;
+}
+
+.ent-task {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+    width: 100%;
+    max-width: 350px;
+    margin-left: 20%;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+button {
+    background: none;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    transition-property: transform;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+}
+
+button:hover {
+    transform: scale(1.3);
+}
+
+.container-tasks ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10%;
+    list-style: none;
+}
+
+.container-geral {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    padding: 50px;
+    border-radius: 10px;
+    margin: 50px auto;
+    background-color: white;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes efectLi {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(15px);
+    }
+}
+
+@font-face {
+    font-family: 'Perfect Penmanship';
+    src: url(fontes/KGPerfectPenmanship.ttf);
+}
+
+.container-tasks li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 30px;
+    width: 100%;
+    max-width: 200px;
+    border: 1px groove rgb(194, 188, 188);
+    margin: 6px;
+    font-family: 'Perfect Penmanship';
+    font-size: 18px;
+}
+
+.container-tasks li:hover {
+    animation-name: efectLi;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+footer {
+    border-top: 2px solid rgb(253, 232, 232);
+    text-align: center;
+    margin-top: 30%;
+    padding: 10px;
+    background-color: #FFB6C1;
+    font-size: 18px;
+}
+
+#logo {
+    width: 50px;
+    margin: 0 auto;
+    transition-property: transform;
+    transition-duration: 0.4s;
+}
+
+#logo:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
