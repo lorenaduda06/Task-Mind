@@ -96,5 +96,3 @@ function cleanInput() {
 }
 
 cleanInput();
-
-localStorage.clear();
